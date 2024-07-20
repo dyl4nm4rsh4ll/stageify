@@ -10,7 +10,7 @@ if __name__ == "__main__":
 
     init = from_file("room.jpg")
     images_resp = client.image_gen.generate_sdxl(
-        prompt="Modify this room with new furniture. Ensure that the exact dimensions of the room, including details such as floor color, are maintained. Decorate the output image with a couch. The output image can also include other new furniture.",
+        prompt="Modify this room with new furniture. Ensure that the exact dimensions of the room, including details such as floor color, are maintained. Decorate the output image with a couch. Also decorate the output image with a lamp. The output image can also include other new furniture.",
         init_image=init, # Only used for image-to-image
         strength=0.9, # Only used for image-to-image
     )
